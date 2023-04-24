@@ -13,11 +13,27 @@
 <body class="container">
     <form method="post" action="">
 
+        <h1>FORMULARIO </h1>
+
         <fieldset>
 
             <label for="nombre">Nombre: </label>
             <input type="text" required maxlength="50" placeholder="Óscar" name="nombre" id="nombre" required>
-        </fieldset>
+            <label for="Edad">Edad: </label>
+            <input type="number" required maxlength="99" required minlength="18" placeholder="24"  id="Edad" required>
+            <label for="Edad">Dni: </label>
+            <input type="text" id="dni" placeholder="000000000X" name="dni" pattern="[0-9]{9}" required>
+            <label for="Edad">Ciudad de origen </label>
+            <input type="text" required maxlength="100" placeholder="Barcelona" name="Ciudad " id="Ciudad" required>
+            <label for="Edad">Como vienes a estudiar </label>
+            <select id="modo-estudio" name="modo-estudio" required>
+                <option value="a-pie" selected>A pie</option>
+                <option value="transporte-publico">Transporte público</option>
+                <option value="transporte-privado">Transporte privado</option>
+              </select>
+            <label for="Edad">Objetivos del curso </label>
+            <textarea id="text" required maxlength="1024" rows="4" cols="30" placeholder="texto libre" name="Objetivosdelcurso" id="Objetivos" >
+            </textarea>
 
         <input type="submit" class="submit" id="submit" value="Enviar" />
 
